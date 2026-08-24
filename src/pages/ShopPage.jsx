@@ -40,8 +40,9 @@ export default function ShopPage() {
                         className={category === item.id ? 'active' : ''} key={item.id}
                         onClick={() => setCategory(item.id)}><span>{item.name}</span><small>{item.count}</small>
                     </button>)}</div>
-                    <div className="side-note"><SlidersHorizontal size={18}/><p>Весь каталог хранится локально и
-                        кэшируется TanStack Query. Список подгружается через IntersectionObserver.</p></div>
+                    <div className="side-note">
+                        <SlidersHorizontal size={18}/>
+                    </div>
                 </aside>
                 <div className="catalog">
                     <div className="catalog-toolbar"><strong>{filtered.length} OBJECTS

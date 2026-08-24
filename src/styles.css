@@ -475,9 +475,18 @@ h1 em, h2 em {
 .meaning-visual {
     aspect-ratio: 1;
     border: 1px solid var(--line);
-    display: grid;
-    place-items: center;
+    /* Эти свойства для центрирования SVG больше не нужны для картинки,
+     но они не помешают, если картинка заполнит все пространство.
+     Убедись, что overflow скрыт, чтобы картинка не вылезала. */
+    overflow: hidden;
     position: relative;
+}
+
+.meaning-visual img {
+    width: 100%;       /* Растягиваем по ширине рамки */
+    height: 100%;      /* Растягиваем по высоте рамки */
+    object-fit: cover; /* Идеально вписываем, сохраняя пропорции и обрезая лишнее */
+    display: block;    /* Убираем возможные отступы снизу */
 }
 
 .meaning-visual svg {

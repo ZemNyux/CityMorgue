@@ -74,12 +74,22 @@ export function TrackList({tracks, onPlay, activeId}) {
 
 export function TrackItem({track, index, onPlay, activeId}) {
     const active = activeId === track.id
+
     return <article className={`track-row ${active ? 'is-playing' : ''}`}>
         <span className="track-index">0{index + 1}</span>
+
         <button className="track-play" onClick={() => onPlay(track)}
-                aria-label={`Слушать ${track.title}`}>{active ? 'Ⅱ' : '▶'}</button>
-        <div className="track-main"><h3>{track.title}</h3><p>{track.story}</p></div>
-        <span className="track-year">{track.year}</span><a className="track-link" href={track.spotify} target="_blank" rel="noreferrer">open ↗</a>
+                aria-label={`Слушать ${track.title}`}>{active ? 'Ⅱ' : '▶'}
+        </button>
+
+        <div className="track-main">
+            <h3>{track.title}</h3>
+            <p>{track.story}</p>
+        </div>
+
+        <span className="track-year">{track.year}</span>
+
+        <a className="track-link" href={track.spotify} target="_blank" rel="noreferrer">open </a>
     </article>
 }
 
@@ -93,8 +103,13 @@ export function ProductCard({product, onDetails}) {
     }
     return <article className="product-card">
         <button className={`product-art ${product.visual}`} onClick={() => onDetails(product)}
-                aria-label={`Открыть ${product.name}`}><span className="product-stamp">{product.tag}</span><span
-            className="product-monogram">CM</span><span className="product-art-label">{product.name}</span></button>
+                aria-label={`Открыть ${product.name}`}>
+
+            <span className="product-stamp">{product.tag}</span>
+            <span className="product-monogram">CM</span>
+            <span className="product-art-label">{product.name}</span>
+
+        </button>
         <div className="product-meta">
             <div><h3>{product.name}</h3><p>{product.description}</p></div>
             <strong>${product.price}</strong></div>

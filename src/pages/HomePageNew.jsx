@@ -92,19 +92,24 @@ export default function HomePage() {
 
         <section className="section meaning-section">
             <div className="page-grid meaning-grid">
-                <div className="meaning-visual"></div>
-                <div className="meaning-copy">
 
+                <div className="meaning-visual">
+                    <img src="/dist/assets/Снимок%20экрана%202026-08-24%20174414.png" alt="City Morgue visual" />
+                </div>
+
+                <div className="meaning-copy">
                     <span className="eyebrow">02 / WHAT IT MEANS</span>
                     <h2>Грязь — это<br/><em>не стиль.</em></h2>
 
-                    <p>Это способ говорить о страхе, зависимости, насилии, одиночестве и
-                    выживании без лака. City Morgue берут экстремальные образы из хоррора и улицы, доводят их до предела
-                    — и оставляют слушателю пространство для собственного прочтения.</p>
+                    <p>Это способ говорить о страхе, зависимости, насилии, одиночестве и выживании без лака. City Morgue берут экстремальные образы из хоррора и улицы, доводят их до предела — и оставляют слушателю пространство для собственного прочтения.</p>
 
-                    <div className="meaning-tags"><span>TRAP METAL</span><span>SHOCK RAP</span><span>DIY ENERGY</span>
+                    <div className="meaning-tags">
+                        <span>TRAP METAL</span>
+                        <span>SHOCK RAP</span>
+                        <span>DIY ENERGY</span>
                     </div>
                 </div>
+
             </div>
         </section>
         <section className="section page-grid music-section"><SectionIntro eyebrow="03 / SONGS WITH TEETH"
