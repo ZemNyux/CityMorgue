@@ -49,6 +49,7 @@ export const tracks = [
         story: 'Трек строится на повторе и гипнозе: уличная мифология, тяжёлые 808 и крючок, который превращает прослушивание в ритуал.',
         link: 'https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/83/5b/60/835b60a2-9508-0af5-0389-15bb0148121b/mzaf_3142207743572130848.plus.aac.p.m4a',
         spotify: 'https://open.spotify.com/track/5T0YyRxyxtLDxLYJhLjqWM'
+
     },
     {
         id: 'draino',
