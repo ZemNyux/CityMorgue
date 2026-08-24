@@ -141,30 +141,33 @@ export const categories = [
 export const products = [
     {
         id: 'tee-bloody',
-        name: 'Bloody America Tee',
+        name: 'CITY MORGUE LOGO TEE',
         category: 'tees',
-        price: 42,
-        tag: 'new',
+        price: 40,
+        image: "dist/assets/CITYMORGUELOGOTEE1_fb3d48e6-ff1e-46ba-adbe-8ade1a976707.webp",
+        tag: 'NEW',
         visual: 'product-bloody',
-        description: 'Плотный хлопок, front print, washed black.'
+        description: '100% Плотный хлопок, front print, washed black, unisex fit'
     },
     {
         id: 'hoodie-morgue',
-        name: 'Morgue Zip Hoodie',
+        name: 'CITY MORGUE LOGO HOODIE',
         category: 'hoodies',
-        price: 88,
-        tag: 'core',
+        price: 80,
+        image: "dist/assets/CITYMORGUELOGOHOODIE1.webp",
+        tag: 'NEW',
         visual: 'product-hoodie',
-        description: 'Тяжёлый футер, молния, красная вышивка.'
+        description: '100% Плотный хлопок, front print, молния, красная вышивка, unisex fit'
     },
     {
         id: 'tee-shinners',
-        name: 'SHINNERS13 Longsleeve',
+        name: 'BOMBS IN THE MAIL HOODIE',
         category: 'tees',
-        price: 58,
+        price: 85,
+        image: "dist/assets/BOMBSINTHEMAILCOURIERHOODIE1_97738844-80e8-42d4-8f8a-390eee96635c.webp",
         tag: 'archive',
         visual: 'product-shinners',
-        description: 'Графика в эстетике первого вирусного клипа.'
+        description: 'Графика в эстетике вирусного клипа, front print, unisex fit'
     },
     {
         id: 'cap-wardogz',

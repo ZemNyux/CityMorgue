@@ -105,6 +105,10 @@ export function ProductCard({product, onDetails}) {
         <button className={`product-art ${product.visual}`} onClick={() => onDetails(product)}
                 aria-label={`Открыть ${product.name}`}>
 
+            {product.image && (
+                <img src={product.image} alt={product.name} className="product-image" />
+            )}
+            
             <span className="product-stamp">{product.tag}</span>
             <span className="product-monogram">CM</span>
             <span className="product-art-label">{product.name}</span>
