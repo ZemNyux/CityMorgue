@@ -51,19 +51,19 @@ export default function HomePage() {
 
         <section className="hero-section page-grid">
 
-            <div className="hero-copy"><span className="eyebrow">THE ARCHIVE / CITY MORGUE</span>
+            <div className="hero-copy"><span className="eyebrow">CITY MORGUE</span>
 
                 <h1>THE<br/><em>NOISE</em><br/>NEVER<br/>DIES.</h1>
                 <p className="hero-lede">Хроника дуэта, который
-                    превратил рэп в хоррор-саундтрек Нью-Йорка.</p>
+                    превратил рэп в хоррор-саундтрек Нью-Йорка.
+                    История ZillaKami и SosMula: от подвала SoundCloud и панк-рэпа до финального альбома My Bloody America. </p>
 
                 <div className="hero-actions">
-                    <a className="button button-red" href="#story">Enter the
-                    archive <ArrowDown size={16}/>
-                    </a>
-                    <Link className="button button-ghost" to="/shop">Shop the
-                    morgue <ArrowRight size={16}/>
-                    </Link>
+                    <a className="button button-red" href="#story">Enter the archive <ArrowDown size={16}/> </a>
+
+                    <Link className="button button-ghost" to="/shop">Магазин<ArrowRight size={16}/> </Link>
+
+                    <a className="button button-black" href="#history">История<ArrowDown size={16}/> </a>
                 </div>
             </div>
 
@@ -89,14 +89,19 @@ export default function HomePage() {
                 <div><h3>{item.title}</h3><p>{item.text}</p></div>
             </article>)}</div>
         </section>
+
         <section className="section meaning-section">
             <div className="page-grid meaning-grid">
-                <div className="meaning-visual"><Skull size={120} strokeWidth={1}/><span className="meaning-label">NOISE<br/>IS A<br/>CHOICE</span>
-                </div>
-                <div className="meaning-copy"><span className="eyebrow">02 / WHAT IT MEANS</span><h2>Грязь —
-                    это<br/><em>не стиль.</em></h2><p>Это способ говорить о страхе, зависимости, насилии, одиночестве и
+                <div className="meaning-visual"></div>
+                <div className="meaning-copy">
+
+                    <span className="eyebrow">02 / WHAT IT MEANS</span>
+                    <h2>Грязь — это<br/><em>не стиль.</em></h2>
+
+                    <p>Это способ говорить о страхе, зависимости, насилии, одиночестве и
                     выживании без лака. City Morgue берут экстремальные образы из хоррора и улицы, доводят их до предела
                     — и оставляют слушателю пространство для собственного прочтения.</p>
+
                     <div className="meaning-tags"><span>TRAP METAL</span><span>SHOCK RAP</span><span>DIY ENERGY</span>
                     </div>
                 </div>
@@ -111,7 +116,7 @@ export default function HomePage() {
                 {tracksQuery.isPending ? <div className="loader">LOADING TRACKS...</div> :
                     <TrackList tracks={tracksQuery.data || []} onPlay={onPlay} activeId={activeTrack}/>}</div>
         </section>
-        <section className="section page-grid releases-section"><SectionIntro eyebrow="04 / RELEASES"
+        <section id="history" className="section page-grid releases-section"><SectionIntro eyebrow="04 / RELEASES"
                                                                               title="Четыре<br /><span>тёмные главы</span>"/>
             <div className="album-grid">{albums.map((album) => <article className="album-card" key={album.title}>
                 <div className={`album-cover ${album.className}`}>
