@@ -19,12 +19,18 @@
     "react-router-dom": "^7.18.2"
   },
   "devDependencies": {
+    "@cfaester/enzyme-adapter-react-18": "^0.8.0",
     "@testing-library/jest-dom": "^7.0.0",
     "@testing-library/react": "^16.3.2",
     "@vitejs/plugin-react": "^4.7.0",
+    "enzyme": "^3.11.0",
+    "jest": "^30.4.2",
     "jsdom": "^30.0.1",
     "tinyglobby": "^0.2.17",
     "vite": "^5.4.21",
-    "vitest": "^4.1.10"
+    "vitest": "^4.1.11"
+  },
+  "scripts": {
+    "test": "vitest"
   }
 }
